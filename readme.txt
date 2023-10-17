@@ -18,6 +18,6 @@ MA0 default 10 GeV
 
 The choice I made here is to ensure roughly similar decay branchings to all modes, mimicking a strongly coupled theory.
 
-$L\sup 1/2 (\partial a_0)^2+1/2 ma0^2 a0^2 + ka2 h (ma0/2Pi)$
+You can either generate the event process by process, so you have a control of the relevative size of different samples. Or just use the commends above, it would give you roughly 2a:3a:4a:5a:6a=10:10:3:2:0.3
 
 

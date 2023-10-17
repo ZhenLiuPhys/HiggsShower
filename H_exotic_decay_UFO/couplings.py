@@ -1,6 +1,6 @@
 # This file was automatically created by FeynRules 2.3.49
 # Mathematica version: 13.0.0 for Microsoft Windows (64-bit) (December 3, 2021)
-# Date: Tue 17 Oct 2023 14:54:56
+# Date: Tue 17 Oct 2023 16:07:35
 
 
 from object_library import all_couplings, Coupling
@@ -58,19 +58,19 @@ GC_12 = Coupling(name = 'GC_12',
                  order = {'QED':2})
 
 GC_13 = Coupling(name = 'GC_13',
-                 value = '-((complex(0,1)*KA6)/MA0**3)',
+                 value = '-0.5*(complex(0,1)*KA2*MA0)/cmath.pi',
                  order = {'QED':1})
 
 GC_14 = Coupling(name = 'GC_14',
-                 value = '-((complex(0,1)*KA5)/MA0**2)',
+                 value = '(-2*cmath.pi*complex(0,1)*KA4)/MA0',
                  order = {'QED':1})
 
 GC_15 = Coupling(name = 'GC_15',
-                 value = '-((complex(0,1)*KA4)/MA0)',
+                 value = '(-4*cmath.pi**2*complex(0,1)*KA5)/MA0**2',
                  order = {'QED':1})
 
 GC_16 = Coupling(name = 'GC_16',
-                 value = '-(complex(0,1)*KA2*MA0)',
+                 value = '(-8*cmath.pi**3*complex(0,1)*KA6)/MA0**3',
                  order = {'QED':1})
 
 GC_17 = Coupling(name = 'GC_17',

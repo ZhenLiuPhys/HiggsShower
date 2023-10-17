@@ -1,6 +1,6 @@
 # This file was automatically created by FeynRules 2.3.49
 # Mathematica version: 13.0.0 for Microsoft Windows (64-bit) (December 3, 2021)
-# Date: Tue 17 Oct 2023 14:54:56
+# Date: Tue 17 Oct 2023 16:07:35
 
 
 from object_library import all_decays, Decay
@@ -36,7 +36,7 @@ Decay_e__minus__ = Decay(name = 'Decay_e__minus__',
 
 Decay_H = Decay(name = 'Decay_H',
                 particle = P.H,
-                partial_widths = {(P.A0,P.A0):'(KA2**2*MA0**2*cmath.sqrt(-4*MA0**2*MH**2 + MH**4))/(32.*cmath.pi*abs(MH)**3)',
+                partial_widths = {(P.A0,P.A0):'(KA2**2*MA0**2*cmath.sqrt(-4*MA0**2*MH**2 + MH**4))/(128.*cmath.pi**3*abs(MH)**3)',
                                   (P.b,P.b__tilde__):'((-12*MB**2*yb**2 + 3*MH**2*yb**2)*cmath.sqrt(-4*MB**2*MH**2 + MH**4))/(16.*cmath.pi*abs(MH)**3)',
                                   (P.c,P.c__tilde__):'((-12*MC**2*yc**2 + 3*MH**2*yc**2)*cmath.sqrt(-4*MC**2*MH**2 + MH**4))/(16.*cmath.pi*abs(MH)**3)',
                                   (P.d,P.d__tilde__):'((-12*MD**2*ydo**2 + 3*MH**2*ydo**2)*cmath.sqrt(-4*MD**2*MH**2 + MH**4))/(16.*cmath.pi*abs(MH)**3)',

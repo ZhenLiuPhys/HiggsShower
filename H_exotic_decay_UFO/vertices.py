@@ -1,6 +1,6 @@
 # This file was automatically created by FeynRules 2.3.49
 # Mathematica version: 13.0.0 for Microsoft Windows (64-bit) (December 3, 2021)
-# Date: Tue 17 Oct 2023 14:54:56
+# Date: Tue 17 Oct 2023 16:07:35
 
 
 from object_library import all_vertices, Vertex
@@ -22,27 +22,27 @@ V_2 = Vertex(name = 'V_2',
              couplings = {(0,0):C.GC_12})
 
 V_3 = Vertex(name = 'V_3',
-             particles = [ P.A0, P.A0, P.A0, P.A0, P.A0, P.A0, P.H ],
-             color = [ '1' ],
-             lorentz = [ L.SSSSSSS1 ],
-             couplings = {(0,0):C.GC_13})
-
-V_4 = Vertex(name = 'V_4',
-             particles = [ P.A0, P.A0, P.A0, P.A0, P.A0, P.H ],
-             color = [ '1' ],
-             lorentz = [ L.SSSSSS1 ],
-             couplings = {(0,0):C.GC_14})
-
-V_5 = Vertex(name = 'V_5',
-             particles = [ P.A0, P.A0, P.A0, P.A0, P.H ],
-             color = [ '1' ],
-             lorentz = [ L.SSSSS1 ],
-             couplings = {(0,0):C.GC_15})
-
-V_6 = Vertex(name = 'V_6',
              particles = [ P.A0, P.A0, P.H ],
              color = [ '1' ],
              lorentz = [ L.SSS1 ],
+             couplings = {(0,0):C.GC_13})
+
+V_4 = Vertex(name = 'V_4',
+             particles = [ P.A0, P.A0, P.A0, P.A0, P.H ],
+             color = [ '1' ],
+             lorentz = [ L.SSSSS1 ],
+             couplings = {(0,0):C.GC_14})
+
+V_5 = Vertex(name = 'V_5',
+             particles = [ P.A0, P.A0, P.A0, P.A0, P.A0, P.H ],
+             color = [ '1' ],
+             lorentz = [ L.SSSSSS1 ],
+             couplings = {(0,0):C.GC_15})
+
+V_6 = Vertex(name = 'V_6',
+             particles = [ P.A0, P.A0, P.A0, P.A0, P.A0, P.A0, P.H ],
+             color = [ '1' ],
+             lorentz = [ L.SSSSSSS1 ],
              couplings = {(0,0):C.GC_16})
 
 V_7 = Vertex(name = 'V_7',

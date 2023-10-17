@@ -1,7 +1,7 @@
 Zhen Liu, Initial Update 10/17/2023
 Instructions for the Model Files:
-The FeynRule Model files are in the Folder
-The Generated UFO model files are in the Folder
+The FeynRule Model files are in the Folder Model-file-H-exotic_MultiScalars
+The Generated UFO model files are in the Folder H_exotic_decay_UFO
 Here I wrote down the singlet H component direct couplings to a0^n, where n=2,3,4,5,6 and assigned the BSM coupling with order QED=1
 To avoid generating many unwanted diagrams, after copying the model files to the MG5 model folder, one can use ./mg5 <<
 import model H_exotic_decay_UFO

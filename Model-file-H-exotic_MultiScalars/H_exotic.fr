@@ -1,0 +1,110 @@
+M$ModelName = "H_exotic_decay";
+
+M$Information = {
+  Authors      -> {"Zhen, Liu"},
+  Version      -> "1.0",
+  Date         -> "10/16/2023",
+  Institutions -> {"University of Minnesota"},
+  Emails       -> {"zliuphys@umn.edu"},
+  URLs         -> ""
+};
+
+M$ClassesDescription = {
+  S[101] == {
+    ClassName        -> A0,
+    SelfConjugate    -> True,
+    Mass             -> {MA0, 10},
+    Width            -> {WA0, 1},
+    PropagatorLabel  -> "A0",
+    PropagatorType   -> D,
+    PropagatorArrow  -> None,
+    ParticleName     -> "A0",
+    FullName         -> "A0"
+  }
+};
+
+(* ************************** *)
+(* *****   Parameters   ***** *)
+(* ************************** *)
+M$Parameters = {
+  KA2 == {
+    ParameterType    -> External,
+    BlockName        -> HEXOTICCOUPLING,
+    OrderBlock       -> 1,
+    Value            -> 0.01,
+    InteractionOrder -> {QED,1},
+    TeX              -> Subscript[K,A2],
+    Description      -> "H-2A0 coupling"
+  },
+  KA3 == {
+    ParameterType    -> External,
+    BlockName        -> HEXOTICCOUPLING,
+    OrderBlock       -> 2,
+    Value            -> 0.01,
+    InteractionOrder -> {QED,1},
+    TeX              -> Subscript[K,A3],
+    Description      -> "H-3A0 coupling"
+  },
+  KA4 == {
+    ParameterType    -> External,
+    BlockName        -> HEXOTICCOUPLING,
+    OrderBlock       -> 3,
+    Value            -> 0.01,
+    InteractionOrder -> {QED,1},
+    TeX              -> Subscript[K,A4],
+    Description      -> "H-4A0 coupling"
+  },
+  KA5 == {
+    ParameterType    -> External,
+    BlockName        -> HEXOTICCOUPLING,
+    OrderBlock       -> 4,
+    Value            -> 0.01,
+    InteractionOrder -> {QED,1},
+    TeX              -> Subscript[K,A5],
+    Description      -> "H-5A0 coupling"
+  },
+  KA6 == {
+    ParameterType    -> External,
+    BlockName        -> HEXOTICCOUPLING,
+    OrderBlock       -> 5,
+    Value            -> 0.01,
+    InteractionOrder -> {QED,1},
+    TeX              -> Subscript[K,A6],
+    Description      -> "H-6A0 coupling"
+  },
+  KAj == {
+    ParameterType    -> External,
+    BlockName        -> HEXOTICCOUPLING,
+    OrderBlock       -> 6,
+    Value            -> 0.1,
+    InteractionOrder -> {QED,1},
+    TeX              -> Subscript[K,j],
+    Description      -> "A0-j-j coupling"
+  },
+  KAmu == {
+    ParameterType    -> External,
+    BlockName        -> HEXOTICCOUPLING,
+    OrderBlock       -> 7,
+    Value            -> 0.0,
+    InteractionOrder -> {QED,1},
+    TeX              -> Subscript[K,mu],
+    Description      -> "A0-mu-mu coupling"
+  }
+};
+
+(* ************************** *)
+(* *****   Lagrangian   ***** *)
+(* ************************** *)
+(* Here W is W+, while Wbar is W- *)
+(* ZL: here I only wrote H coupling as it is the neutral component and it makes the mass of mA0 simpler.*)
+(* ZL: Madgraph might not understand five point vertices; for now, let me comment out the higher point interactions.*)
+
+LH := - KA2 MA0^1/2 H A0 A0- KA3 MA0^0/6 H A0 A0 A0 -KA4 /MA0^1/24 H A0 A0 A0 A0- KA5 /MA0^2/120 H A0 A0 A0 A0 A0- KA6 /MA0^3/720 H A0 A0 A0 A0 A0 A0;
+
+LA := Block[{mu,nu,aa},
+  LA0 = del[A0,mu] del[A0,mu] -MA0^2 A0^2;
+  LA1 = -KAj A0 ubar.u -KAmu A0 mubar.mu;
+  LA0+LA1
+];
+
+Lexo := LSM + LH + LA;

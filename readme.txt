@@ -12,6 +12,10 @@ add process h > a0 a0 a0 a0 a0 QED=1
 add process h > a0 a0 a0 a0 a0 a0 QED=1
 
 Here I wrote two decay verticies for a0, a0 > u u~ and a0 > mu+ mu-. I set the coupling of the 2nd vertex to zero by default.
-Here I wrote and normalize the couplings with simple scaling that KAn H ma0^3 (a0 /ma0)^n, where KAn is the coupling, that you can adjust.
+Here I wrote and normalized the couplings with simple scaling that KAn H ma0^3 (2Pi a0 /ma0)^n, where KAn is the coupling that you can adjust. 
+KAn is dimensionless with default value of 0.01
+MA0 default 10 GeV
+
+
 
 

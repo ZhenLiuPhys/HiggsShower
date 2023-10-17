@@ -12,6 +12,12 @@ add process h > a0 a0 a0 a0 a0 QED=1
 add process h > a0 a0 a0 a0 a0 a0 QED=1
 
 Here I wrote two decay verticies for a0, a0 > u u~ and a0 > mu+ mu-. I set the coupling of the 2nd vertex to zero by default.
-Here I wrote and normalize the couplings with simple scaling that KAn H ma0^3 (a0 /ma0)^n, where KAn is the coupling, that you can adjust.
+Here I wrote and normalized the couplings with simple scaling that KAn H ma0^3 (2Pi a0 /ma0)^n, where KAn is the coupling that you can adjust. 
+KAn is dimensionless with default value of 0.01
+MA0 default 10 GeV
+
+The choice I made here is to ensure roughly similar decay branchings to all modes, mimicking a strongly coupled theory.
+
+You can either generate the event process by process, so you have a control of the relevative size of different samples. Or just use the commends above, it would give you roughly 2a:3a:4a:5a:6a=10:10:3:2:0.3
 
 

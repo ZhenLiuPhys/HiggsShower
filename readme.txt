@@ -16,6 +16,8 @@ Here I wrote and normalized the couplings with simple scaling that KAn H ma0^3 (
 KAn is dimensionless with default value of 0.01
 MA0 default 10 GeV
 
+The choice I made here is to ensure roughly similar decay branchings to all modes, mimicking a strongly coupled theory.
 
+$L\sup 1/2 (\partial a_0)^2+1/2 ma0^2 a0^2 + ka2 h (ma0/2Pi)$
 
 

@@ -21,3 +21,9 @@ The choice I made here is to ensure roughly similar decay branchings to all mode
 You can either generate the event process by process, so you have a control of the relevative size of different samples. Or just use the commends above, it would give you roughly 2a:3a:4a:5a:6a=10:10:3:2:0.3
 
 
+
+(Updates 02/09/2024)
+Madgraph5 generator banner file for different signals and backgrounds. The file is obtained from the published study Phys.Rev.D 105 (2022) 3, 035008 • e-Print: 2109.03294 , (We thank co-author Ke-Pan Xie for providing these files):
+MG5_Wjets_banner is for W+jets background, matched up to two jets. Footnote2 explains leading jet pt cut of 100 GeV, and we applied a K-factor of 1.5.
+MG5_ttbar_banner is for ttbar background. We used a k-factor of 1.6.
+MG5_Wh_banner is for the Wh process. We used a k-factor of 1.5.
